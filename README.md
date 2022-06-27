@@ -1,13 +1,26 @@
 
 # Taskite
 
-A brief description of what this project does and who it's for
+Taskite is a simple website to manage projects with or without your team and track tasks and productivity
 
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Logo](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7765a6146927691.62b98cc79abc8.png)
 
 
-## Screenshots
+## Tech Stack
+
+**Client:** vuejs, vuex, some of bulma css
+
+**Server:** django, django-rest-framework , postgresql
+
+**ui and ux:** Adobe xd , photoshop , illustrator , draw.io 
+
+
+## Database Diagram
+
+![App Screenshot](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/40483d146927691.62b991b273257.png)
+
+## Taskite preview
 
 ![App Screenshot](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4088ab146927691.62b98b0a642e8.png)
 
