@@ -1,0 +1,334 @@
+/* -----------IMPORT GLOBAL STYLING------------- */
+
+@import '../../../assets/css/global.css';
+
+.navbar {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: var(--main-dark-color);
+}
+
+.logo {
+  width: 120px;
+}
+
+.hello-message {
+  color: var(--font-color);
+  font-weight: 500;
+}
+
+.hello-message i {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.action-icon {
+  color: var(--font-color);
+  font-weight: 500;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.logo-and-burger {
+  display: none;
+}
+
+/* .hello-message {
+  visibility: hidden;
+} */
+
+.hide {
+  visibility: hidden;
+}
+
+.ri-close-line {
+  display: none;
+  font-size: 20px;
+  color: rgb(199, 199, 199);
+  position: absolute;
+  left: 260px;
+}
+
+.ri-close-line.show {
+  display: block;
+}
+
+/* fotter navbar styling */
+.footer-navbar {
+  position: fixed;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--main-dark-color);
+  padding: 0.6rem 2rem;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  font-size: 1.5rem;
+  border-radius: 15px 15px 0 0px;
+  color: var(--font-color);
+  z-index: 9999;
+}
+
+.footer-navbar a {
+  color: var(--font-color);
+}
+
+.add {
+  background-color: rgb(4, 110, 197);
+  color: var(--font-color);
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* profile */
+
+.profile {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profile-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-right: 0.5rem;
+  object-fit: cover;
+}
+
+.profile .welcome-message {
+  color: var(--font-color);
+}
+
+.profile .welcome-message i {
+  font-size: 18px;
+  margin-left: 0.5rem;
+}
+
+/* search box */
+.search-box {
+  position: relative;
+}
+
+.search {
+  width: 400px;
+  background: var(--card-news-color);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.search input {
+  padding: 0rem 1rem;
+  font-size: 16px;
+  width: 90%;
+  background: transparent;
+  border: 0;
+  color: var(--font-color);
+}
+
+.search i {
+  cursor: pointer;
+  color: var(--font-color);
+}
+
+/* profile result */
+.search-resault {
+  display: none;
+  position: absolute;
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  background: var(--card-news-color);
+  border-radius: 10px;
+}
+
+.profile-result {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-result .profile-image {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-result .profile-image img {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+
+.profile-result .profile-info {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 1rem;
+}
+
+.profile-result .profile-info .username {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--font-color);
+}
+
+.profile-result .profile-info .contact i,
+.profile-result .profile-info .contact a {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.setting-icon,
+.ri-login-circle-line {
+  color: var(--font-color);
+  font-size: 22px;
+  display: none;
+}
+
+/* notification styling */
+
+.dropdown-content {
+  background: var(--card-news-color);
+  width: 350px;
+  padding: 1rem;
+  color: var(--font-grey-color);
+}
+
+.notification-header {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: var(--font-color);
+}
+
+.notification-header span:nth-child(2) {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(0, 119, 255);
+}
+
+.n-username {
+  font-weight: bold;
+  color: var(--font-color);
+}
+
+.close-search {
+  display: none;
+}
+
+/* ---------------MEDIA QUERY---------------- */
+
+@media only screen and (max-width: 1250px) {
+  .panel-side {
+    display: none;
+  }
+
+  .panel-side.show {
+    display: block;
+    width: 300px;
+    box-shadow: 0 0px 10px -0.5px #aaaaaa1f;
+  }
+
+  .logo-and-burger {
+    display: flex;
+    align-items: center;
+  }
+
+  .hello-message.hide {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .panel-side {
+    display: none;
+  }
+  .hello-message {
+    visibility: visible;
+  }
+  .ri-menu-line {
+    display: none;
+  }
+
+  .footer-navbar {
+    display: flex;
+  }
+  .navbar {
+    background: transparent;
+  }
+
+  .profile .welcome-message p {
+    display: none;
+  }
+
+  .profile .welcome-message i {
+    margin: 0;
+  }
+  .search-box {
+    position: absolute;
+    top: -150px;
+    transition: 1s;
+    width: 300px;
+  }
+
+  .search {
+    width: 300px;
+  }
+  .search-box.show-search {
+    position: absolute;
+    top: 80px;
+  }
+  .close-search {
+    display: block;
+    position: absolute;
+    right: -30px;
+    top: 7px;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .dropdown-content {
+    width: 200px;
+  }
+
+  .setting-icon,
+  .ri-login-circle-line {
+    display: block;
+  }
+
+  .ri-login-circle-line {
+    color: rgba(255, 34, 34, 0.815);
+  }
+
+  .dropdown-menu {
+    width: 250px;
+  }
+
+  .dropdown-menu .dropdown-content {
+    width: 100%;
+  }
+
+  .notification-body .profile-image , .notification-body .profile-image img{
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,215 @@
+/* THIS STYLE FOR PROJECTS AND TASKS PAGES */
+
+.create-task-button {
+  color: #4a77ce;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.create-task-button i {
+  font-size: 1.2rem;
+}
+
+/* task status stayling */
+.tasks-status {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.task-status-title {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: var(--font-color);
+  font-weight: 500;
+  background: var(--main-dark-color);
+  position: relative;
+}
+
+.task-status-title .line-style {
+  width: 100%;
+  background: #14cdfb;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.task-boxes {
+  height: 500px;
+  overflow-y: scroll;
+  cursor: grab;
+}
+
+.task-boxes::-webkit-scrollbar {
+  display: none;
+}
+
+.task-box {
+  background: var(--main-dark-color);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.task-title-and-action {
+  color: var(--font-color);
+  font-weight: 500;
+}
+
+.ri-pencil-line {
+  color: greenyellow;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.ri-close-circle-line {
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.task-delay {
+  color: var(--font-grey-color);
+}
+
+/* pop up */
+.popup-section {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  display: none;
+}
+
+.active {
+  display: flex;
+}
+
+.popup-overlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.7;
+  z-index: -10;
+  overflow: hidden;
+}
+
+.popup {
+  background-color: var(--main-dark-color);
+  padding: 2rem;
+  color: var(--font-color);
+  width: 40%;
+  position: fixed;
+  border-radius: 15px;
+}
+
+.popup header p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.popup-body input,
+.popup-body textarea {
+  margin: 0.5rem 0;
+  border: 0;
+  background-color: var(--card-news-color);
+  color: var(--font-color);
+}
+
+.close-popup {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+#toDo > div > div {
+  border: 2px solid #14cdfb;
+}
+#inProgress > div > div {
+  border: 2px solid #800080;
+}
+#done > div > div {
+  border: 2px solid #00ff40;
+}
+
+.more-details-button {
+  width: 100%;
+}
+
+.friends-box {
+  background-color: var(--card-news-color);
+  border-radius: 10px;
+  padding: 1rem;
+}
+.friend-box {
+  display: flex;
+  align-items: center;
+  background: var(--main-dark-color);
+  border-radius: 10px;
+  padding: 0.5rem;
+  cursor: pointer;
+  height: fit-content;
+}
+
+.team-friend {
+  border: 2px solid #00ff40;
+}
+
+.boxes-of-friends {
+  height: 120px;
+  overflow-y: scroll;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.boxes-of-friends::-webkit-scrollbar {
+  width: 0;
+}
+.search-friends {
+  background-color: var(--main-dark-color);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+  width: 100%;
+}
+.search-friends input {
+  background: transparent;
+  width: 80%;
+}
+/* media query */
+
+@media only screen and (max-width: 940px) {
+  .task-boxes {
+    overflow: visible;
+    height: max-content;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .tasks-status {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .popup {
+    width: 90%;
+  }
+  body {
+    margin-bottom: 4rem;
+  }
+}

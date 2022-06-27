@@ -1,0 +1,7 @@
+*.sqlite3
+core
+media
+migrations
+*initial.py
+*__pycache__
+*.todo

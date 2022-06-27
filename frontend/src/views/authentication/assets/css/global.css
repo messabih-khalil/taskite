@@ -1,0 +1,97 @@
+html{
+  background-image: url(../../../../assets/background.png);
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  width: 150px;
+  z-index: 99999;
+}
+
+.vector-image {
+  position: absolute;
+  z-index: 10;
+  width: 500px;
+  right: 0;
+  bottom: -70px;
+}
+
+.auth-body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.auth-box {
+  -webkit-box-shadow: -4px 5px 9px -3px rgba(0, 0, 0, 0.32);
+  box-shadow: -4px 5px 9px -3px rgba(0, 0, 0, 0.32);
+  background-color: #21222c;
+  width: 35%;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  z-index: 20;
+}
+
+.auth-title {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+label {
+  color: white;
+}
+
+.input {
+  background: #32323b;
+  border: none;
+  color: #fff;
+  margin: 0.5rem 0;
+}
+
+.i-have {
+  color: rgb(0, 195, 255);
+  cursor: pointer;
+}
+
+
+.err-border {
+  border: 1px solid red;
+}
+
+input{
+  outline: none;
+}
+
+input:focus{
+  border: none;
+  outline: none;
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 600px) {
+  .auth-box {
+    width: 90%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .auth-box {
+    width: 60%;
+    align-items: start;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

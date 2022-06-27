@@ -1,0 +1,59 @@
+.logo {
+  width: 120px;
+}
+/* styling panel */
+.panel-side {
+  height: 100vh;
+  padding: 1rem 2rem;
+  background: var(--main-dark-color);
+  width: 15%;
+  position: fixed;
+  z-index: 99999;
+}
+
+.li {
+  color: var(--font-grey-color);
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.li:hover {
+  color: var(--font-color);
+}
+
+.li i {
+  font-size: 1.4rem;
+}
+
+.li span {
+  font-weight: 500;
+}
+
+/* logout button */
+.logout-button{
+  width: 100%;
+  margin-top: 8rem;
+}
+/* panel image */
+
+.panel-image{
+  position: absolute;
+  bottom:10px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel-image img{
+  width: 90%;
+  opacity: .8;
+}
+
+
+@media only screen and (max-width: 1250px) {
+  .logout-button{
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
