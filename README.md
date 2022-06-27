@@ -11,7 +11,7 @@ Taskite is a simple website to manage projects with or without your team and tra
 
 **Client:** vuejs, vuex, some of bulma css
 
-**Server:** django, django-rest-framework , postgresql
+**Server:** django, django-rest-framework , postgresql , jwt
 
 **ui and ux:** Adobe xd , photoshop , illustrator , draw.io 
 
