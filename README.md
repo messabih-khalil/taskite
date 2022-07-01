@@ -22,5 +22,5 @@ Taskite is a simple website to manage projects with or without your team and tra
 
 ## Taskite preview
 
-![App Screenshot](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4088ab146927691.62b98b0a642e8.png)
+![App Screenshot](https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/e566d5147228661.62be4fb2dc1b8.png)
 
