@@ -1,7 +1,7 @@
 
 # Taskite
 
-Taskite is a website to manage projects with or without your team and track tasks and productivity
+Taskite is a Saas website to manage projects with or without your team and track tasks and productivity
 
 
 ![Logo](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7765a6146927691.62b98cc79abc8.png)
